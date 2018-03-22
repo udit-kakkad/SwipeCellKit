@@ -241,7 +241,7 @@ open class SwipeTableViewCell: UITableViewCell {
         
         actionsView.delegate = self
         
-        addSubview(actionsView)
+        contentView.addSubview(actionsView)
 
         actionsView.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
         actionsView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 2).isActive = true
